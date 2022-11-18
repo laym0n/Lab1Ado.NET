@@ -1,0 +1,36 @@
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\bin\Debug\Lab1Ado.NET.exe.config
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\bin\Debug\Lab1Ado.NET.exe
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\bin\Debug\Lab1Ado.NET.pdb
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\bin\Debug\EntityFramework.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\bin\Debug\EntityFramework.xml
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\obj\Debug\Code-second.csproj.AssemblyReference.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\obj\Debug\Code-second.csproj.SuggestedBindingRedirects.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\obj\Debug\Lab1Ado.NET.Form1.resources
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\obj\Debug\Lab1Ado.NET.Properties.Resources.resources
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\obj\Debug\Code-second.csproj.GenerateResource.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\obj\Debug\Code-second.csproj.CoreCompileInputs.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\obj\Debug\Code-second.csproj.CopyComplete
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\obj\Debug\Lab1Ado.NET.exe
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\obj\Debug\Lab1Ado.NET.pdb
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF\Lab1Ado.NET\obj\Debug\Lab1Ado.NET.Form2.resources
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\bin\Debug\Lab1Ado.NET.exe.config
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\bin\Debug\Lab1Ado.NET.exe
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\bin\Debug\Lab1Ado.NET.pdb
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\bin\Debug\EntityFramework.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\bin\Debug\EntityFramework.xml
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\obj\Debug\Code-second.csproj.AssemblyReference.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\obj\Debug\Code-second.csproj.SuggestedBindingRedirects.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\obj\Debug\Lab1Ado.NET.Form1.resources
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\obj\Debug\Lab1Ado.NET.Form2.resources
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\obj\Debug\Lab1Ado.NET.Properties.Resources.resources
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\obj\Debug\Code-second.csproj.GenerateResource.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\obj\Debug\Code-second.csproj.CoreCompileInputs.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\obj\Debug\Code-second.csproj.CopyComplete
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\obj\Debug\Lab1Ado.NET.exe
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\obj\Debug\Lab1Ado.NET.pdb
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\obj\Debug\Lab1Ado.NET.Migrations.Initial.resources
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 2\Lab1EF — копия\Lab1Ado.NET\obj\Debug\Lab1Ado.NET.Migrations.addTime.resources
