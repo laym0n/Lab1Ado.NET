@@ -1,0 +1,38 @@
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\bin\Debug\DLL.dll.config
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\bin\Debug\DLL.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\bin\Debug\DLL.pdb
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\bin\Debug\EntityFramework.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\bin\Debug\EntityFramework.xml
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\obj\Debug\DLL.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\obj\Debug\DLL.pdb
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 3\Lab3\DLL\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3\DLL\bin\Debug\DLL.dll.config
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3\DLL\bin\Debug\DLL.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3\DLL\bin\Debug\DLL.pdb
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3\DLL\bin\Debug\EntityFramework.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3\DLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3\DLL\bin\Debug\EntityFramework.xml
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3\DLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3\DLL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3\DLL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3\DLL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3\DLL\obj\Debug\DLL.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3\DLL\obj\Debug\DLL.pdb
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3 — копия\DLL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3 — копия\DLL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3 — копия\DLL\obj\Debug\DLL.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3 — копия\DLL\obj\Debug\DLL.pdb
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3 — копия\DLL\bin\Debug\DLL.dll.config
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3 — копия\DLL\bin\Debug\DLL.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3 — копия\DLL\bin\Debug\DLL.pdb
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3 — копия\DLL\bin\Debug\EntityFramework.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3 — копия\DLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3 — копия\DLL\bin\Debug\EntityFramework.xml
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3 — копия\DLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\victo\OneDrive\Рабочий стол\Работы\Фомина\Лаб 4\Lab3 — копия\DLL\obj\Debug\DAL.csproj.CopyComplete

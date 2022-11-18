@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AquaparkModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="bracelet">
+    <Key>
+      <PropertyRef Name="Bracelet_id" />
+    </Key>
+    <Property Name="Bracelet_id" Type="Int32" Nullable="false" />
+    <Property Name="Customer_id" Type="Int32" Nullable="false" />
+    <Property Name="Deposit" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK_bracelet_Customer" FromRole="bracelet" ToRole="Customer" />
+    <NavigationProperty Name="operation" Relationship="Self.FK_operation_bracelet" FromRole="bracelet" ToRole="operation" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Customer_ID" />
+    </Key>
+    <Property Name="Customer_ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="bracelet" Relationship="Self.FK_bracelet_Customer" FromRole="Customer" ToRole="bracelet" />
+  </EntityType>
+  <EntityType Name="operation">
+    <Key>
+      <PropertyRef Name="operation_id" />
+    </Key>
+    <Property Name="operation_id" Type="Int32" Nullable="false" />
+    <Property Name="recreation_area_id" Type="Int32" Nullable="false" />
+    <Property Name="bracelet_id" Type="Int32" Nullable="false" />
+    <Property Name="sum" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="bracelet" Relationship="Self.FK_operation_bracelet" FromRole="operation" ToRole="bracelet" />
+    <NavigationProperty Name="recreation_area" Relationship="Self.FK_operation_recreation_area" FromRole="operation" ToRole="recreation_area" />
+  </EntityType>
+  <EntityType Name="recreation_area">
+    <Key>
+      <PropertyRef Name="recreation_area_id" />
+    </Key>
+    <Property Name="recreation_area_id" Type="Int32" Nullable="false" />
+    <Property Name="cost_in_hour" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="operation" Relationship="Self.FK_operation_recreation_area" FromRole="recreation_area" ToRole="operation" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_bracelet_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="bracelet" Type="Self.bracelet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Customer_ID" />
+      </Principal>
+      <Dependent Role="bracelet">
+        <PropertyRef Name="Customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_operation_bracelet">
+    <End Role="bracelet" Type="Self.bracelet" Multiplicity="1" />
+    <End Role="operation" Type="Self.operation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="bracelet">
+        <PropertyRef Name="Bracelet_id" />
+      </Principal>
+      <Dependent Role="operation">
+        <PropertyRef Name="bracelet_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_operation_recreation_area">
+    <End Role="recreation_area" Type="Self.recreation_area" Multiplicity="1" />
+    <End Role="operation" Type="Self.operation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="recreation_area">
+        <PropertyRef Name="recreation_area_id" />
+      </Principal>
+      <Dependent Role="operation">
+        <PropertyRef Name="recreation_area_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AquaparkEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="bracelet" EntityType="Self.bracelet" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" />
+    <EntitySet Name="operation" EntityType="Self.operation" />
+    <EntitySet Name="recreation_area" EntityType="Self.recreation_area" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <AssociationSet Name="FK_bracelet_Customer" Association="Self.FK_bracelet_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="bracelet" EntitySet="bracelet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_operation_bracelet" Association="Self.FK_operation_bracelet">
+      <End Role="bracelet" EntitySet="bracelet" />
+      <End Role="operation" EntitySet="operation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_operation_recreation_area" Association="Self.FK_operation_recreation_area">
+      <End Role="recreation_area" EntitySet="recreation_area" />
+      <End Role="operation" EntitySet="operation" />
+    </AssociationSet>
+    <FunctionImport Name="operations_between" ReturnType="Collection(AquaparkModel.operations_between_Result)">
+      <Parameter Name="low_sum" Mode="In" Type="Int32" />
+      <Parameter Name="upper_sum" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sel" ReturnType="Collection(AquaparkModel.sel_Result)" />
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(AquaparkModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(AquaparkModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="operations_between_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="ID_браслета" Nullable="false" />
+    <Property Type="Int32" Name="Зона_отдыха" Nullable="false" />
+    <Property Type="Int32" Name="Сумма" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sel_Result">
+    <Property Type="Int32" Name="Customer_ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>
