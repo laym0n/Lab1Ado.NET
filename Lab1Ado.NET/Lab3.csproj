@@ -8,7 +8,7 @@
     <ProjectGuid>{FDC9BFCC-2461-4E59-812A-B289E41469DB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Lab1Ado.NET</RootNamespace>
-    <AssemblyName>EF</AssemblyName>
+    <AssemblyName>Lab1Ado.NET</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,9 +35,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>Lab1Ado.NET.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
