@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_bracelet = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.ID_recreation_zone = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.sum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -49,13 +52,23 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.recreationAreaIdDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.braceletIdDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.sumDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.button2 = new System.Windows.Forms.Button();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.depositDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -63,12 +76,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(3, 2);
@@ -79,11 +94,11 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.numericUpDown3);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.button4);
-            this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
@@ -93,24 +108,68 @@
             this.tabPage1.Text = "Операции";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // button6
             // 
-            this.button2.Location = new System.Drawing.Point(28, 18);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 37);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Сохранить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button6.Location = new System.Drawing.Point(223, 17);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(164, 35);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "Update";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(1004, 26);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(120, 26);
+            this.numericUpDown3.TabIndex = 5;
+            this.numericUpDown3.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(953, 26);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(26, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "ID";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(1147, 20);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(122, 37);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "Удалить";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(473, 18);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(177, 37);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "Добавить операцию";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.ID_bracelet,
-            this.ID_recreation_zone,
-            this.sum});
+            this.idDataGridViewTextBoxColumn1,
+            this.recreationAreaIdDataGridViewTextBoxColumn2,
+            this.braceletIdDataGridViewTextBoxColumn2,
+            this.sumDataGridViewTextBoxColumn2,
+            this.timeDataGridViewTextBoxColumn1});
+            this.dataGridView1.DataSource = this.bindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(6, 73);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
@@ -118,43 +177,32 @@
             this.dataGridView1.Size = new System.Drawing.Size(1370, 837);
             this.dataGridView1.TabIndex = 0;
             // 
-            // ID
+            // tabPage2
             // 
-            this.ID.DataPropertyName = "ID";
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 8;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ID.Width = 150;
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.dataGridView4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(1363, 1057);
+            this.tabPage2.TabIndex = 4;
+            this.tabPage2.Text = "Браслеты";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // ID_bracelet
+            // dataGridView4
             // 
-            this.ID_bracelet.DataPropertyName = "ID браслета";
-            this.ID_bracelet.HeaderText = "ID браслета";
-            this.ID_bracelet.MinimumWidth = 8;
-            this.ID_bracelet.Name = "ID_bracelet";
-            this.ID_bracelet.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ID_bracelet.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ID_bracelet.Width = 150;
-            // 
-            // ID_recreation_zone
-            // 
-            this.ID_recreation_zone.DataPropertyName = "Зона отдыха";
-            this.ID_recreation_zone.HeaderText = "Зона отдыха";
-            this.ID_recreation_zone.MinimumWidth = 8;
-            this.ID_recreation_zone.Name = "ID_recreation_zone";
-            this.ID_recreation_zone.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ID_recreation_zone.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ID_recreation_zone.Width = 150;
-            // 
-            // sum
-            // 
-            this.sum.DataPropertyName = "Сумма";
-            this.sum.HeaderText = "Сумма";
-            this.sum.MinimumWidth = 8;
-            this.sum.Name = "sum";
-            this.sum.Width = 150;
+            this.dataGridView4.AutoGenerateColumns = false;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.customerIdDataGridViewTextBoxColumn,
+            this.depositDataGridViewTextBoxColumn});
+            this.dataGridView4.DataSource = this.bindingSource2;
+            this.dataGridView4.Location = new System.Drawing.Point(4, 92);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowHeadersWidth = 62;
+            this.dataGridView4.RowTemplate.Height = 28;
+            this.dataGridView4.Size = new System.Drawing.Size(1340, 536);
+            this.dataGridView4.TabIndex = 0;
             // 
             // tabPage3
             // 
@@ -165,7 +213,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1363, 1057);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Отчёт 1";
+            this.tabPage3.Text = "LINQ";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // dataGridView2
@@ -307,46 +355,101 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button4
+            // idDataGridViewTextBoxColumn1
             // 
-            this.button4.Location = new System.Drawing.Point(473, 18);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(177, 37);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Добавить операцию";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn1.Width = 150;
             // 
-            // button5
+            // recreationAreaIdDataGridViewTextBoxColumn2
             // 
-            this.button5.Location = new System.Drawing.Point(1147, 20);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(122, 37);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Удалить";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.recreationAreaIdDataGridViewTextBoxColumn2.DataPropertyName = "RecreationAreaId";
+            this.recreationAreaIdDataGridViewTextBoxColumn2.HeaderText = "RecreationAreaId";
+            this.recreationAreaIdDataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.recreationAreaIdDataGridViewTextBoxColumn2.Name = "recreationAreaIdDataGridViewTextBoxColumn2";
+            this.recreationAreaIdDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.recreationAreaIdDataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.recreationAreaIdDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.recreationAreaIdDataGridViewTextBoxColumn2.Width = 150;
             // 
-            // label4
+            // braceletIdDataGridViewTextBoxColumn2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(953, 26);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "ID";
+            this.braceletIdDataGridViewTextBoxColumn2.DataPropertyName = "BraceletId";
+            this.braceletIdDataGridViewTextBoxColumn2.HeaderText = "BraceletId";
+            this.braceletIdDataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.braceletIdDataGridViewTextBoxColumn2.Name = "braceletIdDataGridViewTextBoxColumn2";
+            this.braceletIdDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.braceletIdDataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.braceletIdDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.braceletIdDataGridViewTextBoxColumn2.Width = 150;
             // 
-            // numericUpDown3
+            // sumDataGridViewTextBoxColumn2
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(1004, 26);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 26);
-            this.numericUpDown3.TabIndex = 5;
-            this.numericUpDown3.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.sumDataGridViewTextBoxColumn2.DataPropertyName = "sum";
+            this.sumDataGridViewTextBoxColumn2.HeaderText = "sum";
+            this.sumDataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.sumDataGridViewTextBoxColumn2.Name = "sumDataGridViewTextBoxColumn2";
+            this.sumDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.sumDataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // timeDataGridViewTextBoxColumn1
+            // 
+            this.timeDataGridViewTextBoxColumn1.DataPropertyName = "time";
+            this.timeDataGridViewTextBoxColumn1.HeaderText = "time";
+            this.timeDataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.timeDataGridViewTextBoxColumn1.Name = "timeDataGridViewTextBoxColumn1";
+            this.timeDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.timeDataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(BLL.Models.OperationModel);
+            // 
+            // bindingSource2
+            // 
+            this.bindingSource2.DataSource = typeof(BLL.Models.BraceletModel);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(5, 26);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(201, 38);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Выдать браслет";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // customerIdDataGridViewTextBoxColumn
+            // 
+            this.customerIdDataGridViewTextBoxColumn.DataPropertyName = "CustomerId";
+            this.customerIdDataGridViewTextBoxColumn.HeaderText = "CustomerName";
+            this.customerIdDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.customerIdDataGridViewTextBoxColumn.Name = "customerIdDataGridViewTextBoxColumn";
+            this.customerIdDataGridViewTextBoxColumn.ReadOnly = true;
+            this.customerIdDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.customerIdDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.customerIdDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // depositDataGridViewTextBoxColumn
+            // 
+            this.depositDataGridViewTextBoxColumn.DataPropertyName = "Deposit";
+            this.depositDataGridViewTextBoxColumn.HeaderText = "Deposit";
+            this.depositDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.depositDataGridViewTextBoxColumn.Name = "depositDataGridViewTextBoxColumn";
+            this.depositDataGridViewTextBoxColumn.ReadOnly = true;
+            this.depositDataGridViewTextBoxColumn.Width = 150;
             // 
             // Form1
             // 
@@ -359,7 +462,10 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -369,7 +475,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -382,17 +489,12 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ID_bracelet;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ID_recreation_zone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sum;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
@@ -401,6 +503,26 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn operationidDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn recreationareaidDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn braceletidDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sumDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn braceletDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn recreationareaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn recreationAreaIdDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewComboBoxColumn braceletIdDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sumDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.BindingSource bindingSource2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn customerIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn depositDataGridViewTextBoxColumn;
     }
 }
 
